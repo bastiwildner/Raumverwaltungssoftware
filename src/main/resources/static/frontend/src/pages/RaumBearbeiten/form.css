@@ -1,0 +1,114 @@
+.RaumBearbeiten_content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgb(244, 244, 244);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.RaumBearbeiten_content .header {
+  margin-bottom: 30px;
+}
+
+.RaumBearbeiten_content .raumInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.RaumBearbeiten_content .raumItem {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.RaumBearbeiten_content .raumTitle {
+  text-align: left;
+  font-size: 22px;
+  width: 200px;
+  font-weight: bold;
+}
+.RaumBearbeiten_content .raumValue {
+  text-align: left;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.RaumBearbeiten_content .form_body {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.RaumBearbeiten_content .title {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.RaumBearbeiten_content .back_button {
+  position: absolute;
+  left: 0;
+}
+
+.RaumBearbeiten_content .button {
+  padding: 8px 16px;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.RaumBearbeiten_content .button:hover {
+  background-color: #4b5563;
+}
+
+.RaumBearbeiten_content .button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .RaumBearbeiten_content .modal-overlay {
+    padding: 1rem;
+  }
+
+  .RaumBearbeiten_content .modal {
+    width: 90% !important;
+    max-width: 100% !important;
+    padding: 1.5rem;
+    border-radius: 6px;
+  }
+
+  .RaumBearbeiten_content .modal-header {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+  }
+
+  .RaumBearbeiten_content .modal-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .RaumBearbeiten_content .modal-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (hover: none) {
+  .RaumBearbeiten_content .modal-button:hover {
+    background-color: #6b7280;
+  }
+}

@@ -1,0 +1,149 @@
+.schedule-management-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.schedule-management-container .content-wrapper {
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative;
+}
+
+.schedule-management-container .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule-management-container .content-header .h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+.schedule-management-container .content-header .print-button {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #6d758f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.schedule-management-container .content-header .print-button:hover {
+  background-color: #5a6268;
+}
+
+.schedule-management-container .content-wrapper .back-button {
+  position: absolute;
+  left: 32px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-management-container .content-wrapper .back-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .schedule-management-container .content-header {
+    display: flex;
+  }
+
+  .schedule-management-container .content-header .h2 {
+    font-size: 1.3rem;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .schedule-management-container .content-wrapper .back-button {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 6px;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .schedule-management-container .content-wrapper .back-button::before {
+    content: '←';
+    display: block;
+    font-size: 18px;
+  }
+
+  .schedule-management-container .content-wrapper .back-button span {
+    display: none;
+  }
+
+  .schedule-management-container .content-header .print-button {
+    width: 100%;
+    order: 3;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+
+  .schedule-management-container .calendar-container .fc-header-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .schedule-management-container .calendar-container .fc-toolbar-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .schedule-management-container .calendar-container .fc-button {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .schedule-management-container .calendar-container .fc-timeGridWeek-view .fc-timegrid-slot {
+    font-size: 10px;
+  }
+
+  .schedule-management-container .calendar-container .fc-event {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .schedule-management-container .calendar-container .fc-timegrid-axis {
+    font-size: 10px;
+  }
+
+  .schedule-management-container .calendar-container .fc-col-header-cell {
+    font-size: 12px;
+  }
+}
+
+@media (hover: none) {
+  .schedule-management-container .content-wrapper .back-button:hover,
+  .schedule-management-container .content-header .print-button:hover {
+    background-color: #6d758f;
+    transform: none;
+    box-shadow: none;
+  }
+}

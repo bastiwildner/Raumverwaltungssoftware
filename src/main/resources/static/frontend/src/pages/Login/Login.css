@@ -1,0 +1,173 @@
+.login-container {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.login-container .login-box {
+  max-width: 800px; 
+  height: 400px;
+  position: relative;
+  padding: 2rem;
+  background: #F4F4F4;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 35px auto;
+  align-items: center;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.login-container .form-group {
+  margin-top: 2rem;
+  width: 70%;
+  position: relative;
+}
+
+.login-container .form-group label {
+  height: 20px;
+  display: flex;
+  color: #6D758F;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 94%;
+}
+
+.login-container .login-button {
+  width: 40%;
+  height: 40px;
+  position: relative;
+  left: 16%;
+  margin-top: 10px;
+  padding: 25px 18px;
+  background: #6D758F;
+  box-shadow: 0px 1px 4px rgba(24.73, 32.61, 60.56, 0.08);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0px;
+  word-wrap: break-word;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container .login-form {
+  position: absolute;
+  top: 60px;
+  left: 25%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 50px;
+}
+
+.login-container .login-button:hover {
+  opacity: 90%;
+}
+
+.login-container .register-link {
+  margin: 1rem 0;
+  position: relative;
+  top: 300px;
+}
+
+.login-container .register-link a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.login-container .reset-password {
+  text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  top: 200px;
+}
+
+.login-container .reset-password a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.register-link a:hover,
+.login-container .reset-password a:hover {
+  text-decoration: underline;
+}
+
+.login-container .error-message{
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  margin-top: 10px;
+
+}
+@media (max-width: 768px) {
+
+  .login-container .login-box {
+    padding: 0.8rem;
+    margin: 20px auto 0;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .login-container .form-group {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .login-container input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .login-container .login-button {
+    width: 85%;
+    left: 0;
+    margin: 25px auto 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container .login-form {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 0 1rem;
+  }
+
+  .login-container .register-link,
+  .login-container .reset-password {
+    position: relative;
+    top: 0;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .login-container .reset-password {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,185 @@
+.NutzerMitRolleAnlegen_content {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.NutzerMitRolleAnlegen_content .form-wrapper {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+}
+
+.NutzerMitRolleAnlegen_content .form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.NutzerMitRolleAnlegen_content .form-group {
+  margin-bottom: 15px;
+}
+
+.NutzerMitRolleAnlegen_content .form-group label {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.NutzerMitRolleAnlegen_content .form-group input,
+.NutzerMitRolleAnlegen_content .form-group select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 14px;
+  width: 40% !important;
+  min-width: 435px;
+}
+
+.NutzerMitRolleAnlegen_content .form-group input {
+  width: 38.5% !important;
+}
+
+.NutzerMitRolleAnlegen_content .form-group select {
+  width: 42%;
+  height: 40px;
+  padding: 10px !important;
+  background: white;
+  box-shadow: 0px 1px 4px rgba(24.73, 32.61, 60.56, 0.08);
+  border-radius: 6px;
+  border: 1px #6D758F solid;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.NutzerMitRolleAnlegen_content .back-button {
+  position: absolute;
+  left: 0;
+  top: -2.5px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.NutzerMitRolleAnlegen_content .back-button:active 
+.NutzerMitRolleAnlegen_content .save-button:active{
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.NutzerMitRolleAnlegen_content .back-button:hover 
+.NutzerMitRolleAnlegen_content .save-button:hover{
+  background-color: #5a6268;
+}
+
+.NutzerMitRolleAnlegen_content  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.NutzerMitRolleAnlegen_content  .back-button span {
+  display: block;
+}
+
+.NutzerMitRolleAnlegen_content .form-wrapper .save-button {
+  padding: 10px;
+  background: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  font-size: 14px;
+}
+
+.NutzerMitRolleAnlegen_content .goLoginText {
+  color: grey;
+}
+
+@media (max-width: 768px) {
+
+  .NutzerMitRolleAnlegen_content .form-wrapper {
+    margin: 20px auto 0;
+  }
+
+  .NutzerMitRolleAnlegen_content .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .NutzerMitRolleAnlegen_content .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .NutzerMitRolleAnlegen_content .back-button span {
+    display: none;
+  }
+
+  .NutzerMitRolleAnlegen_content .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .NutzerMitRolleAnlegen_content .form-group label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .NutzerMitRolleAnlegen_content .form-group input,
+  .NutzerMitRolleAnlegen_content .form-group select {
+    width: 100% !important;
+    min-width: auto !important;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+
+  .NutzerMitRolleAnlegen_content .form-group select {
+    height: 40px;
+    padding: 10px !important;
+  }
+
+  .NutzerMitRolleAnlegen_content .form-wrapper .save-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .NutzerMitRolleAnlegen_content .goLoginText {
+    font-size: 0.9rem;
+  }
+}
+
+@media (hover: none) {
+  .NutzerMitRolleAnlegen_content .back-button:hover,
+  .NutzerMitRolleAnlegen_content .save-button:hover {
+    background-color: #6d758f;
+    transform: none;
+    box-shadow: none;
+  }
+}

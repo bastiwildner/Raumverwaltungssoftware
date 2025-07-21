@@ -1,0 +1,206 @@
+.Meinebuchungen-container {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.Meinebuchungen-container .table-container {
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.Meinebuchungen-container .table-container:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Meinebuchungen-container .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Meinebuchungen-container .table-container th,
+.Meinebuchungen-container .table-container td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.95rem;
+}
+
+.Meinebuchungen-container .table-container th {
+  background-color: #6D758F;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  position: relative;
+  pointer-events: none; 
+}
+
+.Meinebuchungen-container .table-container th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Meinebuchungen-container .table-container tr:not(:last-child) td {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.Meinebuchungen-container .table-container tr:nth-child(even) {
+  background-color: #f8fafb;
+}
+
+.Meinebuchungen-container .table-container tr:hover {
+  background-color: #f1f3f5;
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
+
+.Meinebuchungen-container .cancel-button {
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.Meinebuchungen-container .cancel-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.Meinebuchungen-container .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.Meinebuchungen-container .cancel-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.Meinebuchungen-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.Meinebuchungen-container .back-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965; 
+}
+
+.Meinebuchungen-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.Meinebuchungen-container .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.Meinebuchungen-container .back-button span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  
+  .Meinebuchungen-container .table-container {
+    border-radius: 6px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: none;
+  }
+
+  .Meinebuchungen-container .table-container th,
+  .Meinebuchungen-container .table-container td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    min-width: 100px;
+  }
+
+  .Meinebuchungen-container .table-container th {
+    white-space: nowrap;
+  }
+
+  .Meinebuchungen-container .table-container td {
+    word-break: break-word;
+  }
+
+  .Meinebuchungen-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .Meinebuchungen-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .Meinebuchungen-container .back-button span {
+    display: none;
+  }
+
+  .Meinebuchungen-container .cancel-button {
+    background-color: #6d758f;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+}
+
+@media (hover: none) {
+  .Meinebuchungen-container .table-container tr:hover {
+    background-color: transparent;
+    transform: none;
+  }
+  
+  .Meinebuchungen-container .cancel-button:hover,
+  .Meinebuchungen-container .back-button:hover {
+    background-color: #6D758F;
+  }
+}
+
+.Meinebuchungen-container .css-a0xp3v {
+  z-index: 1000000;
+}

@@ -1,0 +1,396 @@
+.room-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.room-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.room-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.room-container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.room-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.room-container .back-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.room-container .content-wrapper {
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative;
+}
+
+.room-container .search-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.room-container .input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.room-container .form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.room-container .results-section {
+  margin-top: 2rem;
+}
+
+.room-container h2 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-block-end: 0.13em;
+}
+
+.room-container .randnotiz {
+  color: #333;
+  font-size: 0.9rem;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* Vorlage für Tabellen, kann für andere sites übernommen werden*/
+.room-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.room-container table:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room-container th,
+.room-container td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  height: 20px;
+  font-size: 0.95rem;
+}
+
+.room-container th {
+  background-color: #6D758F;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.room-container th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.room-container tr:not(:last-child) td {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.room-container tr:nth-child(even) {
+  background-color: #f8fafb;
+}
+
+.room-container .clickable-row {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.room-container .clickable-row:hover {
+  background-color: #f1f3f5;
+  transform: translateX(4px);
+}
+
+.room-container .clickable-row:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f9fcff;
+}
+
+.room-container .clickable-row.selected {
+  background-color: #d1e7dd;
+}
+
+.room-container .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.room-container .action-button {
+  width: 300px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  background-color: #6D758F;
+  transition: opacity 0.2s;
+  min-width: 200px;
+  max-height: 2.5rem;
+  margin-left: 0px;
+}
+
+.room-container .action-button:hover {
+  background-color: #5a6268;
+}
+
+/* Modal Vorlage */
+.room-container .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.room-container .modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.room-container .modal-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.room-container .modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.room-container .modal-button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6D758F;
+  color: white;
+  transition: opacity 0.2s;
+  min-width: 120px;
+}
+
+.room-container .modal-button:hover {
+  opacity: 0.9;
+}
+
+.room-container .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.room-container .back-button span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .room-container .h1 {
+    font-size: 1.4rem;
+    margin: 60px 0 1.5rem 0;
+    padding: 0 10px;
+  }
+
+  .room-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .room-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .room-container .back-button span {
+    display: none;
+  }
+
+  .room-container .content-wrapper {
+    padding: 1.2rem;
+    margin: 20px auto 0;
+    border-radius: 6px;
+  }
+
+  .room-container .input-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .room-container .form-input {
+    height: 44px;
+    font-size: 15px;
+    padding: 0.6rem;
+  }
+
+  .room-container table {
+    border-radius: 6px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .room-container th,
+  .room-container td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    min-width: 100px;
+  }
+
+  .room-container th {
+    white-space: nowrap;
+  }
+
+  .room-container td {
+    word-break: break-word;
+  }
+
+  .room-container .clickable-row {
+    -webkit-tap-highlight-color: rgba(109, 117, 143, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .room-container .clickable-row::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .room-container .clickable-row:active::after {
+    background-color: rgba(109, 117, 143, 0.1);
+  }
+
+  .room-container .button-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .room-container .action-button {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0.8rem;
+    font-size: 15px;
+  }
+
+  .room-container .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 0 10px;
+  }
+
+  .room-container .modal-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .room-container .modal-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .room-container .modal-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .room-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .room-container .randnotiz {
+    font-size: 0.8rem;
+  }
+}
+
+@media (hover: none) {
+  .room-container .clickable-row:hover {
+    background-color: transparent;
+  }
+  
+  .room-container .action-button:hover,
+  .room-container .back-button:hover {
+    background-color: #6D758F;
+  }
+}

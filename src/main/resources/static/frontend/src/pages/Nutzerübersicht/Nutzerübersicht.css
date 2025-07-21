@@ -1,0 +1,249 @@
+.Nutzerübersicht_container {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.Nutzerübersicht_container h1 {
+  position: relative;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.Nutzerübersicht_container .content-wrapper {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+}
+
+.Nutzerübersicht_container .search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Nutzerübersicht_container .search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.Nutzerübersicht_container .button {
+  padding: 8px 16px;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.Nutzerübersicht_container .button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.Nutzerübersicht_container .button:hover {
+  background-color: #5a6268;
+}
+
+.Nutzerübersicht_container .back-button {
+  position: absolute;
+  left: 0;
+  top: -2.5px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.Nutzerübersicht_container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.Nutzerübersicht_container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.Nutzerübersicht_container  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.Nutzerübersicht_container  .back-button span {
+  display: block;
+}
+
+.Nutzerübersicht_container .table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.Nutzerübersicht_container .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.Nutzerübersicht_container .table:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.Nutzerübersicht_container .table th,
+.Nutzerübersicht_container .table td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  height: 20px;
+  font-size: 0.95rem;
+}
+
+.Nutzerübersicht_container .table th {
+  background-color: #6D758F;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  position: relative;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.logbuch-container .table-container td {
+  word-break: break-word;
+}
+
+.Nutzerübersicht_container .table th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Nutzerübersicht_container .table tr:not(:last-child) td {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.Nutzerübersicht_container .table tr:nth-child(even) {
+  background-color: #f8fafb;
+}
+
+.Nutzerübersicht_container .table tr:hover {
+  background-color: #f1f3f5;
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
+
+.Nutzerübersicht_container .edit-button {
+  padding: 6px 12px;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.Nutzerübersicht_container .edit-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.Nutzerübersicht_container .edit-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .Nutzerübersicht_container .h1 {
+    font-size: 1.4rem;
+    margin: 60px 0 1.5rem 0;
+    padding: 0 10px;
+  }
+
+  .Nutzerübersicht_container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .Nutzerübersicht_container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .Nutzerübersicht_container .back-button span {
+    display: none;
+  }
+
+  .Nutzerübersicht_container .content-wrapper {
+    padding: 1.2rem;
+    margin: 20px auto 0;
+    border-radius: 6px;
+  }
+
+
+  .Nutzerübersicht_container .table {
+    border-radius: 6px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .Nutzerübersicht_container .table th,
+  .Nutzerübersicht_container .table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    min-width: 100px;
+  }
+
+  .Nutzerübersicht_container .table th {
+    white-space: nowrap;
+    
+    transform: none;
+  }
+
+  .Nutzerübersicht_container .table td {
+    word-break: break-word;
+  }
+
+  @media (hover: none) {
+    .Nutzerübersicht_container .clickable-row:hover {
+      background-color: transparent;
+    }
+    
+    .Nutzerübersicht_container .action-button:hover,
+    .Nutzerübersicht_container .back-button:hover {
+      background-color: #6D758F;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Uni Passau",
+  "name": "Raumbuchungs- und Gebäudeverwaltungssystem der Universität Passau",
+  "icons": [
+    {
+      "src": "Uni_Passau_Logo cropped.png",
+      "type": "image/png",
+      "sizes": "468x318"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

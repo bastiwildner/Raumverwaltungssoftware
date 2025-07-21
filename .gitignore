@@ -1,0 +1,54 @@
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Node.js/Frontend
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# Java-spezifische Dateien
+*.class         
+*.jar           
+*.war           
+*.ear           
+
+# IDE/Editor-spezifisch
+.idea/          
+.vscode/       
+*.swp           
+
+# Umgebungs- und Deployment-Dateien
+.env
+*.key
+*.crt
+*.pem
+*.pub
+
+# Logs und Debugging
+*.log
+logs/
+debug.log
+
+# Datenbanken und lokale Entwicklungsdateien
+*.sqlite
+*.db
+
+# Gradle spezifische Dateien 
+.gradle/
+
+# Maven spezifische Dateien 
+target/
+
+# Java-Module (falls mit JDK 9 oder höher gearbeitet wird)
+*.mod
+*.file
+
+# Eclipse spezifische Dateien
+.project
+.classpath
+.settings/
+
+# Andere Java-Entwicklungsdateien
+hs_err_pid*

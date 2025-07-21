@@ -1,0 +1,328 @@
+.GebäudeBearbeitenPage {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.GebäudeBearbeitenPage .content-wrapper {
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.GebäudeBearbeitenPage .form-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.GebäudeBearbeitenPage .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.GebäudeBearbeitenPage .input-field {
+  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.GebäudeBearbeitenPage .time-section h3,
+.GebäudeBearbeitenPage .select-container h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.GebäudeBearbeitenPage .time-inputs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.GebäudeBearbeitenPage .time-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.GebäudeBearbeitenPage .time-input {
+  width: 70px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.GebäudeBearbeitenPage .time-label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.GebäudeBearbeitenPage .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.GebäudeBearbeitenPage .form-group label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.33rem;
+  text-align: left;
+}
+
+.GebäudeBearbeitenPage .select-container {
+  margin-bottom: 30px;
+  align-items: left !important;
+}
+
+.GebäudeBearbeitenPage .select-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+.GebäudeBearbeitenPage .form-group input,
+.GebäudeBearbeitenPage .form-group textarea,
+.GebäudeBearbeitenPage .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.GebäudeBearbeitenPage .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.GebäudeBearbeitenPage .button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #6b7280;
+  color: white;
+}
+
+.GebäudeBearbeitenPage .button:hover {
+  background-color: #4b5563;
+}
+
+.GebäudeBearbeitenPage .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.GebäudeBearbeitenPage .back-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.GebäudeBearbeitenPage .back-button:hover {
+  background-color: #5a6268;
+}
+
+.GebäudeBearbeitenPage  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.GebäudeBearbeitenPage  .back-button span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+
+  .GebäudeBearbeitenPage .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .GebäudeBearbeitenPage .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .GebäudeBearbeitenPage .back-button span {
+    display: none;
+  }
+
+  .GebäudeBearbeitenPage .content-wrapper {
+    padding: 1.2rem;
+    margin: 20px auto 0;
+    border-radius: 6px;
+  }
+
+  .GebäudeBearbeitenPage .form-grid {
+    gap: 20px;
+    grid-template-columns: auto;
+    margin-bottom: 30px;
+  }
+
+  .GebäudeBearbeitenPage .selection-container {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  }
+
+  .GebäudeBearbeitenPage .action-buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .GebäudeBearbeitenPage .action-button {
+    width: 48%;
+    margin: 0;
+    padding: 0.8rem;
+    font-size: 15px;
+  }
+
+  .GebäudeBearbeitenPage .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .GebäudeBearbeitenPage .building-select {
+    padding: 0.6rem;
+    font-size: 15px;
+    width: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .GebäudeBearbeitenPage .button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .GebäudeBearbeitenPage .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #6d758f;
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .GebäudeBearbeitenPage .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 0 10px;
+  }
+
+  .GebäudeBearbeitenPage .modal-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .GebäudeBearbeitenPage .modal-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .GebäudeBearbeitenPage h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.0rem;
+  }
+}
+
+@media (hover: none) {
+  .GebäudeBearbeitenPage .action-button:hover,
+  .GebäudeBearbeitenPage .back-button:hover {
+    background-color: #6D758F;
+  }
+}
+
+.GebäudeBearbeitenPage .bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.GebäudeBearbeitenPage .bottom-button {
+  background-color: #6d758f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .GebäudeBearbeitenPage .selection-container {
+    flex-direction: column;
+  }
+
+  .GebäudeBearbeitenPage .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .GebäudeBearbeitenPage .bottom-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .GebäudeBearbeitenPage .action-buttons {
+    width: 100%;
+  }
+}

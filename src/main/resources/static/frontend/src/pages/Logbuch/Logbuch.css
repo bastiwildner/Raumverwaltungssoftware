@@ -1,0 +1,296 @@
+.logbuch-container {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+.logbuch-container .box {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative;
+}
+
+.logbuch-container .title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.logbuch-container .table-container {
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.logbuch-container .table-container:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logbuch-container .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.logbuch-container .table-container th,
+.logbuch-container .table-container td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.95rem;
+}
+
+.logbuch-container .table-container th {
+  background-color: #6D758F;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  position: relative;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.logbuch-container .table-container td {
+  word-break: break-word;
+}
+
+.logbuch-container .table-container th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logbuch-container .table-container tr:not(:last-child) td {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.logbuch-container .table-container tr:nth-child(even) {
+  background-color: #f8fafb;
+}
+
+.logbuch-container .table-container tr:hover {
+  background-color: #f1f3f5;
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
+
+.logbuch-container .filter button {
+  background-color: #6d758f;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+font-size: 16px;
+border: none;
+transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.logbuch-container .filter button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.logbuch-container .filter button:hover {
+  background-color: #5a6268;
+}
+
+.logbuch-container .back-button {
+  position: absolute;
+  left: 0;
+  top: -2.5px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.logbuch-container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.logbuch-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.logbuch-container  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.logbuch-container  .back-button span {
+  display: block;
+}
+
+.logbuch-container .filter {
+  margin-bottom: 20px;
+}
+
+.logbuch-container .filter label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-right: 3rem;
+}
+
+.logbuch-container .filter input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+
+.logbuch-container .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logbuch-container .target-directory {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logbuch-container .target-directory input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.logbuch-container .export-button {
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.logbuch-container .export-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965; 
+}
+
+.logbuch-container .export-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+
+  .logbuch-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .logbuch-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .logbuch-container .back-button span {
+    display: none;
+  }
+
+  .logbuch-container .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logbuch-container .filter label {
+    margin-right: 0;
+    width: fit-content;
+  }
+
+  .logbuch-container .filter input {
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  .logbuch-container .target-directory {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logbuch-container .target-directory input {
+    width: fit-content;
+  }
+
+  .logbuch-container .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logbuch-container .table-container {
+    border-radius: 6px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .logbuch-container .table-container th,
+  .logbuch-container .table-container td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    min-width: 100px;
+  }
+
+  .logbuch-container .table-container th {
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .logbuch-container .table-container td {
+    word-break: break-word;
+  }
+}
+
+@media (hover: none) {
+  .logbuch-container .table-container tr:hover {
+    
+    transform: none;
+  }
+  
+  .logbuch-container .back-button:hover {
+    background-color: #6D758F;
+  }
+}

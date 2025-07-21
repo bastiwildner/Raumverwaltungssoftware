@@ -1,0 +1,209 @@
+.room-detail-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.room-detail-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.room-detail-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.room-detail-container .back-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.room-detail-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.room-detail-container  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.room-detail-container  .back-button span {
+  display: block;
+}
+
+.room-detail-container .content-wrapper {
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative;
+}
+
+.room-detail-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.room-detail-container .section {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.room-detail-container h2 {
+  color: #333;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.room-detail-container .details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.room-detail-container .detail-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.room-detail-container .label {
+  font-weight: 500;
+  color: #333;
+}
+
+.room-detail-container .equipment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.room-detail-container .equipment-list li {
+  color: #333;
+  text-align: left;
+}
+
+.room-detail-container .action-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6D758F;
+  color: white;
+  transition: opacity 0.2s;
+  width: 35%;
+}
+
+.room-detail-container .action-button.secondary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.room-detail-container .action-button:hover {
+  opacity: 0.9;
+}
+
+.room-detail-container .bottom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+  .room-detail-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .room-detail-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .room-detail-container .back-button span {
+    display: none;
+  }
+
+  .room-detail-container .content-wrapper {
+    padding: 1.2rem;
+    margin: 20px auto 0;
+    border-radius: 6px;
+  }
+
+  .room-detail-container .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .room-detail-container .section {
+    padding-bottom: 5px;
+  }
+
+  .room-detail-container .action-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 15px;
+  }
+
+  .room-detail-container .bottom-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    margin-top: 10px;
+  }
+
+
+  .room-detail-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .room-detail-container .action-button.secondary {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (hover: none) {
+  .room-detail-container .action-button:hover,
+  .room-detail-container .back-button:hover {
+    opacity: 1;
+    background-color: #6D758F;
+  }
+}

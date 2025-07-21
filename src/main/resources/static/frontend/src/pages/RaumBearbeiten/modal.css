@@ -1,0 +1,82 @@
+.RaumBearbeiten_content .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.RaumBearbeiten_content .modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.RaumBearbeiten_content .modal-header {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.RaumBearbeiten_content .modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.RaumBearbeiten_content .modal-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6b7280;
+  color: white;
+}
+
+.RaumBearbeiten_content .modal-button:hover {
+  background-color: #4b5563;
+}
+
+@media (max-width: 768px) {
+  .RaumBearbeiten_content .modal-overlay {
+    padding: 1rem;
+  }
+
+  .RaumBearbeiten_content .modal {
+    width: 90% !important;
+    max-width: 100% !important;
+    padding: 1.5rem;
+    border-radius: 6px;
+  }
+
+  .RaumBearbeiten_content .modal-header {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+  }
+
+  .RaumBearbeiten_content .modal-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .RaumBearbeiten_content .modal-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (hover: none) {
+  .RaumBearbeiten_content .modal-button:hover {
+    background-color: #6b7280;
+  }
+}

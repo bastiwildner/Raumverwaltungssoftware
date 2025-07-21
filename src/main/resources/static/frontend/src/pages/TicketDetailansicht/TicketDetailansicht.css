@@ -1,0 +1,168 @@
+.ticket-detail-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.ticket-detail-container .content-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2rem;
+  margin-top: 35px;
+}
+
+.ticket-detail-container .content-wrapper .title{
+  text-align: center;
+color: #333;
+margin-bottom: 2rem;
+font-size: 1.8rem;
+}
+
+.ticket-detail-container .error-message{
+margin-top: 10px;
+}
+
+.ticket-detail-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-detail-container .back-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.ticket-detail-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.ticket-detail-container  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.ticket-detail-container  .back-button span {
+  display: block;
+}
+
+.ticket-detail-container .ticket-info {
+  margin-bottom: 20px;
+}
+
+.ticket-detail-container .info-group {
+  margin-bottom: 10px;
+}
+
+.ticket-detail-container .info-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.ticket-detail-container .info-group span,
+.info-group p {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
+.ticket-detail-container .status-change {
+  margin-top: 20px;
+}
+
+.ticket-detail-container .status-change select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.ticket-detail-container .status-change button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #5c5c5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+  .ticket-detail-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .ticket-detail-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .ticket-detail-container .back-button span {
+    display: none;
+  }
+
+  .ticket-detail-container .ticket-info {
+    margin-bottom: 1rem;
+  }
+
+  .ticket-detail-container .info-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .ticket-detail-container .info-group label {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+  }
+
+  .ticket-detail-container .info-group span,
+  .ticket-detail-container .info-group p {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .ticket-detail-container .status-change select {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .ticket-detail-container .status-change button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (hover: none) {
+  .ticket-detail-container .back-button:hover,
+  .ticket-detail-container .status-change button:hover {
+    background-color: #6d758f;
+    transform: none;
+    box-shadow: none;
+  }
+}

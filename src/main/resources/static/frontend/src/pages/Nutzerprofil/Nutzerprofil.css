@@ -1,0 +1,193 @@
+.profile-container .profile-container {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 60px);
+}
+
+.profile-container .profile-grid {
+  background: white;
+  border-radius: 8px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  min-height: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+}
+
+.profile-container .sidebar {
+  background-color: #e9ecef;
+  border-radius: 8px 0 0 8px;
+  padding: 2rem 1rem;
+}
+
+.profile-container .sidebar-section {
+  padding: 1rem;
+  margin-bottom: 11.3rem;
+  cursor: pointer;
+}
+
+.profile-container .sidebar-section.active {
+  background-color: #e9ecef;
+  font-weight: 500;
+}
+
+.profile-container .sidebar-section h2 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.profile-container .main-content {
+  padding: 2rem;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+  border-right: 1px solid #dee2e6;
+}
+
+.user-data,
+.logout-section,
+.profile-container .login-info {
+  margin-bottom: 2rem;
+}
+
+.profile-container h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-container .data-field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-container .data-field label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.profile-container .data-field span {
+  color: #333;
+}
+
+.profile-container .permissions {
+  padding: 2rem;
+}
+
+.profile-container .permissions-list label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.profile-container .permissions-list {
+  margin-top: 1rem;
+}
+
+.profile-container .permissions-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.profile-container .permissions-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+
+.profile-container .permissions-list li:before {
+  content: "•";
+  margin-right: 10px;
+}
+
+.profile-container .action-button {
+  background-color: #6d758f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
+  width: 150px; 
+}
+
+.profile-container .action-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .profile-container .profile-grid {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    min-height: auto;
+  }
+
+  .profile-container .sidebar {
+    display: none;
+  }
+
+  .profile-container .main-content {
+    padding: 2rem;
+    border-right: none;
+  }
+
+  .profile-container .user-data,
+  .profile-container .logout-section,
+  .profile-container .login-info {
+    margin-bottom: 1rem;
+  }
+
+  .profile-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+  }
+
+  .profile-container .data-field {
+    margin-bottom: 0.75rem;
+  }
+
+  .profile-container .data-field label {
+    font-size: 1rem;
+  }
+
+  .profile-container .data-field span {
+    font-size: 1rem;
+  }
+
+  .profile-container .permissions {
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .profile-container .permissions-list label {
+    font-size: 1rem;
+  }
+
+  .profile-container .permissions-list li {
+    font-size: 1rem;
+  }
+
+  .profile-container .action-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (hover: none) {
+  .profile-container .action-button:hover {
+    opacity: 1;
+  }
+}
+

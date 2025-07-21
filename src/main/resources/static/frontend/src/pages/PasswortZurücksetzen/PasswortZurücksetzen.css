@@ -1,0 +1,188 @@
+.passwortzuruecksetzen-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.passwortzuruecksetzen-container .content-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2rem;
+  margin-top: 35px;
+}
+
+.passwortzuruecksetzen-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.passwortzuruecksetzen-container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.passwortzuruecksetzen-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.passwortzuruecksetzen-container .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.passwortzuruecksetzen-container .back-button span {
+  display: block;
+}
+
+.passwortzuruecksetzen-container .title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.passwortzuruecksetzen-container .site-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.passwortzuruecksetzen-container .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.passwortzuruecksetzen-container .form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.passwortzuruecksetzen-container .form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.passwortzuruecksetzen-container .form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6d758f;
+  color: white;
+  transition: opacity 0.2s;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.passwortzuruecksetzen-container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.passwortzuruecksetzen-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.passwortzuruecksetzen-container .error-message {
+  color: #ff0000;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.passwortzuruecksetzen-container .success-message {
+  color: #28a745;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .passwortzuruecksetzen-container .content-wrapper {
+    padding: 1.2rem;
+    margin: 20px auto 0;
+    border-radius: 6px;
+  }
+
+  .passwortzuruecksetzen-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .passwortzuruecksetzen-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .passwortzuruecksetzen-container .back-button span {
+    display: none;
+  }
+
+  .passwortzuruecksetzen-container .site-form {
+    gap: 15px;
+  }
+
+  .passwortzuruecksetzen-container .form-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .passwortzuruecksetzen-container .form-label {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .passwortzuruecksetzen-container .form-input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .passwortzuruecksetzen-container .form-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 0.75rem;
+  }
+
+  .passwortzuruecksetzen-container .error-message,
+  .passwortzuruecksetzen-container .success-message {
+    font-size: 0.8rem;
+  }
+}
+
+@media (hover: none) {
+  .passwortzuruecksetzen-container .back-button:hover,
+  .passwortzuruecksetzen-container .form-button:hover {
+    background-color: #6d758f;
+    transform: none;
+    box-shadow: none;
+  }
+}

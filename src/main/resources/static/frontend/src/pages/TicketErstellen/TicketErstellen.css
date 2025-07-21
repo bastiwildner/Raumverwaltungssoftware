@@ -1,0 +1,213 @@
+.create-ticket-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.create-ticket-container .content-wrapper{
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  position: relative; 
+}
+
+.create-ticket-container .back-button {
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  background-color: #6d758f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.create-ticket-container .back-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #4f5965;
+}
+
+.create-ticket-container .back-button:hover {
+  background-color: #5a6268;
+}
+
+.create-ticket-container .back-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.create-ticket-container  .back-button::before {
+  display: none;
+  content: '←';
+}
+
+.create-ticket-container  .back-button span {
+  display: block;
+}
+
+.create-ticket-container .title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.create-ticket-container .ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.create-ticket-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-ticket-container .form-group label {
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.create-ticket-container .form-group input, 
+.create-ticket-container .form-group textarea, 
+.create-ticket-container .form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  background: white;
+  color: #333333;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 4px rgba(24, 32, 60, 0.08);
+}
+.create-ticket-container .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.create-ticket-container .action-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6d758f;
+  color: white;
+  transition: opacity 0.2s;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.create-ticket-container .action-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965; 
+}
+
+.create-ticket-container .action-button:hover {
+  background-color: #5a6268;
+}
+
+.create-ticket-container .cancel-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6d758f;
+  color: white;
+  transition: opacity 0.2s;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.create-ticket-container .cancel-button:active {
+  transform: scale(0.96); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #4f5965;
+}
+
+.create-ticket-container .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .create-ticket-container .content-wrapper {
+    padding: 1.5rem;
+    margin-top: 25px;
+    border-radius: 6px;
+  }
+
+  .create-ticket-container .back-button {
+    position: relative;
+    left: 0;
+    top: -5px;
+    width: auto;
+    padding: 6px;
+    
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .create-ticket-container .back-button::before {
+    display: block;
+    font-size: 18px;
+  }
+
+  .create-ticket-container .back-button span {
+    display: none;
+  }
+
+  .create-ticket-container .ticket-form {
+    gap: 1rem;
+  }
+
+  .create-ticket-container .form-group input,
+  .create-ticket-container .form-group textarea,
+  .create-ticket-container .form-group select {
+    padding: 12px;
+    font-size: 14px;
+    height: 48px;
+  }
+
+  .create-ticket-container .form-group textarea {
+    height: 120px;
+  }
+
+  .create-ticket-container .button-group {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .create-ticket-container .action-button,
+  .create-ticket-container .cancel-button {
+    width: 100%;
+    max-width: none;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (hover: none) {
+  .create-ticket-container .back-button:hover,
+  .create-ticket-container .action-button:hover,
+  .create-ticket-container .cancel-button:hover {
+    background-color: #6d758f;
+    transform: none;
+    box-shadow: none;
+  }
+}

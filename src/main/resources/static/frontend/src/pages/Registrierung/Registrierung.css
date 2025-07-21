@@ -1,0 +1,197 @@
+.registrierung-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.registrierung-container .registrierung-box {
+  max-width: 1200px;
+  height: 850px;
+  position: relative;
+  padding: 2rem;
+  background: #F4F4F4;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.registrierung-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.registrierung-container .registrierung-hinweis {
+  position: absolute;
+  top: 800px;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+  color: #19213D;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
+.registrierung-container .registrierung-form {
+  position: absolute;
+  top: 60px;
+  left: 21%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 50px;
+}
+
+.registrierung-container .form-group {
+  margin-bottom: 20px;
+}
+
+.registrierung-container .form-group label {
+  height: 20px;
+  display: flex;
+  color: #6D758F;
+  font-size: 1rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+.registrierung-container .form-group input{
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 94%;
+  min-width: 435px;
+}
+
+.registrierung-container .form-group select {
+  width: 100%;
+  height: 40px;
+  padding: 10px !important;
+  background: white;
+  box-shadow: 0px 1px 4px rgba(24.73, 32.61, 60.56, 0.08);
+  border-radius: 6px;
+  border: 1px #6D758F solid;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.registrierung-container .form-group option {
+  color: #333333;
+  font-family: 'Montserrat';
+}
+
+.registrierung-container .registrierung-button {
+  width: 100%;
+  height: 40px;
+  position: center;
+  margin-top: 30px;
+  padding: 25px 18px;
+  background: #6D758F;
+  box-shadow: 0px 1px 4px rgba(24.73, 32.61, 60.56, 0.08);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0px;
+  word-wrap: break-word;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+.registrierung-container .registrierung-button:hover {
+  opacity: 90%;
+}
+
+.registrierung-container .registrierung-login-link {
+  position: absolute;
+  top: 700px;
+  left: 43.7%;
+  text-align: center;
+  color: #6c757d !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .registrierung-container .registrierung-box {
+    padding: 1.2rem;
+    margin: 20px auto;
+    height: auto;
+    min-height: auto;
+  }
+
+  .registrierung-container .registrierung-form {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 0 1rem;
+  }
+
+  .registrierung-container .form-group {
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+  .registrierung-container .form-group input {
+    width: 100%;
+    min-width: auto;
+    font-size: 0.9rem;
+  }
+
+  .registrierung-container .form-group select {
+    height: 35px;
+    padding: 8px !important;
+    font-size: 0.9rem;
+  }
+
+  .registrierung-container .registrierung-button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 12px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .registrierung-container .registrierung-hinweis {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+  }
+
+  .registrierung-container .registrierung-login-link {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+}
